@@ -13,6 +13,7 @@ a {
 body {
     width: 100vw;
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -46,7 +47,6 @@ nav {
 
 .nav-logo-container img {
     width: 220px;
-    margin-top: 10px;
 }
 
 .nav-link-container {
@@ -59,4 +59,31 @@ nav {
 .nav-link-container a {
     color: black;
     border-bottom: 1px solid black;
+}
+
+main {
+    height: calc(100% - 120px);
+    text-align: center;
+    padding-top: 150px;
+    background-image: url('https://i.pinimg.com/564x/f0/5a/c1/f05ac1263b4e36834852a79339bbce4a.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.main-button {
+    margin-top: 100px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid white;
+    background-color: #47cfac;
+    cursor: pointer;
 }
