@@ -11,13 +11,15 @@ a {
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     font-family: 'Roboto', sans-serif;
 }
 
+.home-body {
+    width: 100vw;
+    height: 100vh;
+}
+
 header {
-    width: 100%;
     display: grid;
     grid-template-rows: 50px 70px;
 }
@@ -61,7 +63,7 @@ nav {
     border-bottom: 1px solid black;
 }
 
-main {
+.main-home {
     height: calc(100% - 120px);
     text-align: center;
     padding-top: 150px;
@@ -71,14 +73,14 @@ main {
     background-size: cover;
 }
 
-.main-title {
+.main-home-text {
     color: white;
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 10px;
 }
 
-.main-button {
+.main-home-button {
     margin-top: 100px;
     padding: 10px;
     font-size: 1rem;
@@ -86,4 +88,101 @@ main {
     border: 1px solid white;
     background-color: #47cfac;
     cursor: pointer;
+}
+
+.last-blog {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 40px;
+    padding:  10px 40px 50px;
+    background-color: #e6e9ed;
+}
+
+.last-blog-container {
+    max-width: 800px;
+    justify-self: end;
+}
+
+.last-blog-img-container {
+    width: 100%;
+    height: auto;
+}
+
+.last-blog-img-container img {
+    width: 85%;
+}
+
+.last-blog-info-container {
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.last-blog-info-container h2 {
+    font-size: 1.4rem;
+}
+
+.last-blog-info-container p {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.blogs-button {
+    font-size: 12px;
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #47cfac;
+}
+
+.blogs-button:hover {
+	border: 1px solid white;
+	color: white;
+	background-color: #48CFAD;
+}
+
+.last-blog-info-container a {
+    margin-top: 30px;
+}
+
+.blogs-container {
+    margin-bottom: 50px;
+}
+
+.blogs-container h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.blogs-container-grid {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    border-top: 1px solid #e6e9ed;
+}
+
+.blog-item p{
+    font-size: 1rem;
+    margin: 15px 0;
+}
+
+.blog-item-title{
+    font-weight: bold;
+}
+
+.blog-item img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: white;
+    border-top: 35px solid #47cfac;
+    background-color: #23262e;
 }
